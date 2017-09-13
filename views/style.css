@@ -9,3 +9,7 @@ h2 {
 .container {
   background-color: yellow;
 }
+
+title {
+  font-color: red;
+}
