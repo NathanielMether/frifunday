@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Friday-Funday</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body class='container'>
+    <h2>PLEASE FEEL FREE TO EDIT AND HAVE FUN, HERE IS THE GIT, FORK IT, CREATE PULL REQUEST TO SECRET ADMIN!</h2>
+    <h3><a href="https://github.com/crunchysoul/frifunday" target="_blank">CLICK TO GIT</a></h3>
+    <h2>PLEASE ADD MORE SUGGESTIONS TO SLACK #friday-funday, SECRET ADMIN WILL UPDATE IN NO TIME, TURST GOD!</h2>
+    <p>What do we want to do? Something crazy huh?</p>
+    <form action='cast' method='post'>
+      <ul class='unstyled'>
+        <% Choices.each do |id, text| %>
+          <li>
+            <label class='radio'>
+              <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
+              <%= text %>
+            </label>
+          </li>
+        <% end %>
+      </ul>
+      <button type='submit' class='btn btn-primary'>Please Cast your vote Codemonkeys, our frifunday craziness hundred percent depends on ya.<br> Vote is God given right.<br> Last time people didn't treat vote seriously, human race got Donald Trump, so, yeap, VOTE!</button>
+    </form>
+    <p></p>
+    <img src="https://www.askideas.com/media/48/Hey-You-Guys-Funny-Donald-Trump-Meme-Picture.jpg" alt=""/>
+    <p></p>
+    <img src="http://www.funnybeing.com/wp-content/uploads/2017/02/My-Bodys-Ready-600x666.jpg" alt=""/>
+    <h1>IF YOU DONT CAST OUR FRIFUNDAY, YOU ARE... </h1>
+    <img src="https://www.askideas.com/media/48/Donald-Trump-Say-You-Are-Fired-Funny-Donald-Trump-Meme-Picture-For-Facebook.jpg" alt=""/>
+  </body>
+</html>
